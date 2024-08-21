@@ -7,46 +7,51 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fbeaff;
+            background-color: #ffe6e6;
             color: #333;
-            text-align: center;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
         }
         h1 {
-            color: #d16ba5;
+            color: #e63946;
+            margin-top: 50px;
+            font-size: 36px;
         }
         p {
             font-size: 18px;
-            line-height: 1.6;
+            color: #6d6875;
         }
         .heart {
-            font-size: 50px;
-            color: #ff6f61;
-            margin: 20px 0;
+            font-size: 60px;
+            color: #ff4d6d;
+            animation: float 4s infinite;
         }
-        .signature {
-            font-style: italic;
-            font-size: 20px;
-            color: #555;
+        .heart2 {
+            font-size: 40px;
+            color: #ffb3c1;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            animation: bounce 5s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Para mi querida Johana</h1>
-        <p>
-            Cada día contigo es un regalo. Eres mi luz, mi alegría y la razón de mis sonrisas. Te quiero más de lo que las palabras pueden expresar.
-        </p>
-        <div class="heart">❤️</div>
-        <p class="signature">Con todo mi amor, [Jahaziel]</p>
-    </div>
+    <h1>Para mi Johana</h1>
+    <p>Eres el amor de mi vida, mi persona favorita y realmente la persona que mas quiero en todo el mundo.🌎💞</p>
+    <div class="heart">❤️</div>
+    <div class="heart2">💖</div>
 </body>
 </html>
